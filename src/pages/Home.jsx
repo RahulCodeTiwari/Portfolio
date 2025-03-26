@@ -3,6 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import me from "../assets/images/me.jpeg";
 import {motion} from "framer-motion";
 import Service from "../components/Services/Service";
+import RecentWork from "../components/RecentWorks/RecentWork";
 
 
 const Home = () => {
@@ -79,7 +80,7 @@ const Home = () => {
                 </div>
               </div>
             </Col>
-            <Col md={6} className="order-1 order-md-2">
+            <Col md={6} className="order-1 order-md-2 pb-2 pb-md-0">
               <div className="hero-img">
                 <img src={me} alt="image" className="image" />
               </div>
@@ -91,7 +92,7 @@ const Home = () => {
       <section className="activement-section section-spacing pb-5">
         <Container>
           <Row>
-            <Col lg={3} md={6} sm={6} xs={6}>
+            <Col lg={3} md={6} sm={6} xs={6} className="pb-4 pb-lg-0">
               <div className="activement-item d-flex align-align-items-center flex -column flex-sm-row">
                 <div className="number me-sm-3 me-0 mb-3 mb-sm-0">
                   <h5>14</h5>
@@ -103,7 +104,31 @@ const Home = () => {
                 </div>
               </div>
             </Col>
-            <Col lg={3} md={6} sm={6} xs={6}>
+            <Col lg={3} md={6} sm={6} xs={6} className="pb-4 pb-lg-0">
+              <div className="activement-item d-flex align-align-items-center flex -column flex-flex-sm-row">
+                <div className="number me-sm-3 me-0 mb-3 mb-sm-0">
+                  <h5>10+</h5>
+                </div>
+                <div className="text">
+                  <p className="detail-text primary-clr">
+                    projects <br/> completed
+                  </p>
+                </div>
+              </div>
+            </Col>
+            <Col lg={3} md={6} sm={6} xs={6} className="pb-4 pb-lg-0">
+              <div className="activement-item d-flex align-align-items-center flex -column flex-flex-sm-row">
+                <div className="number me-sm-3 me-0 mb-3 mb-sm-0">
+                  <h5>10+</h5>
+                </div>
+                <div className="text">
+                  <p className="detail-text primary-clr">
+                    projects <br/> completed
+                  </p>
+                </div>
+              </div>
+            </Col>
+            <Col lg={3} md={6} sm={6} xs={6} className="pb-4 pb-lg-0">
               <div className="activement-item d-flex align-align-items-center flex -column flex-flex-sm-row">
                 <div className="number me-sm-3 me-0 mb-3 mb-sm-0">
                   <h5>10+</h5>
@@ -122,6 +147,7 @@ const Home = () => {
       </main>
 
       <Service />
+      <RecentWork />
     </>
   )
 }
