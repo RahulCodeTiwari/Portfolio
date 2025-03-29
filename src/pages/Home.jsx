@@ -4,6 +4,10 @@ import me from "../assets/images/me.jpeg";
 import {motion} from "framer-motion";
 import Service from "../components/Services/Service";
 import RecentWork from "../components/RecentWorks/RecentWork";
+import Career from "../components/Career/Career";
+import Skill from "../components/Skills/Skill";
+import Testimonial from "../components/Testimonials/Testimonial";
+import Contact from "../components/Contact/Contact";
 
 
 const Home = () => {
@@ -55,7 +59,7 @@ const Home = () => {
                     Resume <i className="bi bi-download ms-2"></i>
 
                   </button>
-                  <ul className="d-flex gap-3 m-0 mt-3 mt-sm-0 p-0 ms-sm-3 social-media pb-3">
+                  <ul className="d-flex gap-3 m-0 mt-3 mt-sm-0 p-0 ms-sm-3 social-media pb-3 pb-md-0">
                     <li className="d-block">
                       <a href="#">
                         <i className="bi bi-twitter"></i>
@@ -148,6 +152,10 @@ const Home = () => {
 
       <Service />
       <RecentWork />
+      <Career />
+      <Skill />
+      <Testimonial />
+      <Contact />
     </>
   )
 }
