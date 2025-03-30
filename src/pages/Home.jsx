@@ -10,17 +10,22 @@ import Testimonial from "../components/Testimonials/Testimonial";
 import Contact from "../components/Contact/Contact";
 
 
+
 const Home = () => {
+ 
+
   const [cursorPos, setCursorPos] = useState({x:0, y:0});
 
   // Mouse move event listener
   useEffect(() => {
+
     const handleMouseMove=(e) =>{
       setCursorPos({x:e.clientX, y:e.clientY});
     };
     window.addEventListener("mousemove", handleMouseMove);
-    return (() => 
-      window.removeEventListener("mousemove", handleMouseMove));
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
     }, []);
 
   return (
@@ -52,7 +57,8 @@ const Home = () => {
                   Developer
                 </h1>
                 <p className="detail-text mt-4 mt-md-0 ">
-                  I'm a professional web developer with 5 years of experience. I can develop any kind of website, web application, and mobile application.
+                  I'm a professional web developer with 5 years of experience. 
+                  I can develop any kind of website, web application, and mobile application.
                 </p>
                 <div className="d-flex mt-3 align-content-center flex-ms-row flex-column">
                   <button className="secondary-btn" type="button">

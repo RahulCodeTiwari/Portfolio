@@ -2,10 +2,10 @@ import { useEffect } from "react";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Home from "./pages/Home";
-import "animate.css";
-import WOW from 'wowjs';
 
 import "./App.css";
+import WOW from "wowjs";
+import "animate.css"; 
 
 import Theme from "./components/Themes/Theme";
 import { ThemeContextProvider } from "./contexts/themecontext";
@@ -13,8 +13,14 @@ import { ThemeContextProvider } from "./contexts/themecontext";
 
 function App() {
   useEffect(() => {
-    new WOW.WOW().init();
+    // Ensure window is available before initializing WOW.js
+    if (typeof window !== "undefined") {
+      const wow = new WOW.default();
+wow.init();
+
+    }
   }, []);
+
   return (
     <>
      <ThemeContextProvider>
