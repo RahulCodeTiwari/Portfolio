@@ -91,18 +91,18 @@ const Service = () => {
               </ListGroup>
 
               <motion.div
-              className="active-bg wow fadeInup"
-              data-wow-delay='.6s'
-              initial={{visibility:"hidden", y:10}}
-              animate={{visibility:"visible", y:10}}
-              exit={{visibility:"visible", y:10}}
-              style={{
-                position:"absolute",
-                height: itemDimensions[hoverIndex]?.height || "100px",
-                left: itemDimensions[hoverIndex]?.left || 0,
-                top: itemDimensions[hoverIndex]?.top || 0,
-                zIndex: 1,
-              }}
+                className="active-bg wow fadeInup"
+                data-wow-delay='.6s'
+                initial={{visibility:"hidden", y:10}}
+                animate={{visibility:"visible", y:10}}
+                exit={{visibility:"visible", y:10}}
+                style={{
+                  position:"absolute",
+                  height: itemDimensions[hoverIndex]?.height || "100px",
+                  left: itemDimensions[hoverIndex]?.left || 0,
+                  top: itemDimensions[hoverIndex]?.top || 0,
+                  zIndex: 1,
+                }}
               >
 
               </motion.div>

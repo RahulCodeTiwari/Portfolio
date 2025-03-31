@@ -1,5 +1,5 @@
 import React from "react";
-import "../Career/career.css";
+import "../Career/Career.css";
 import { Card, Col, Container, Row} from "react-bootstrap";
 import { educationData, experienceData } from "../../utils/data";
 

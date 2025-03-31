@@ -44,7 +44,7 @@ const Home = () => {
       <section className="hero-section">
         <Container>
           <Row className="align-items-center">
-            <div className="intro-text d-none d-md-block">
+            <div className="intro_text d-none d-md-block">
               <p className="animate-stroke">Hi</p>
             </div>
             <Col md={6} className="order-2 order-md-1">
@@ -52,15 +52,15 @@ const Home = () => {
                 <h3 className="heading mb-3">
                   I am Web Developer
                 </h3>
-                <h1>
+                <h1 className="main-heading">
                   Next-Level Web  <br />
                   Developer
                 </h1>
-                <p className="detail-text mt-4 mt-md-0 ">
+                <p className="detail-text mt-4 mt-md-0 text-center text-md-start">
                   I'm a professional web developer with 5 years of experience. 
                   I can develop any kind of website, web application, and mobile application.
                 </p>
-                <div className="d-flex mt-3 align-content-center flex-ms-row flex-column">
+                <div className="d-flex mt-3 align-items-center flex-ms-row flex-column">
                   <button className="secondary-btn" type="button">
                     Resume <i className="bi bi-download ms-2"></i>
 
@@ -103,7 +103,7 @@ const Home = () => {
         <Container>
           <Row>
             <Col lg={3} md={6} sm={6} xs={6} className="pb-4 pb-lg-0">
-              <div className="activement-item d-flex align-align-items-center flex -column flex-sm-row">
+              <div className="activement-item d-flex align-align-items-center flex-column flex-sm-row">
                 <div className="number me-sm-3 me-0 mb-3 mb-sm-0">
                   <h5>14</h5>
                 </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import "../Contact/contact.css";
+import "../Contact/Contact.css";
 import { Col, Container, FloatingLabel, Row, Form } from "react-bootstrap";
 
 const Contact = () => {

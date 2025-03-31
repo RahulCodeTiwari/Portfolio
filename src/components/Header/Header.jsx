@@ -26,7 +26,7 @@ const Header = () => {
     <header className="header">
         <Container fluid='md'>
             <Row>
-            <Navbar key="lg" expand="lg" className="bg-body-tertiary mb-3">
+            <Navbar key="lg" expand="lg" className=" mb-3">
           <Container fluid>
 
             {/* logo */}
@@ -62,13 +62,13 @@ const Header = () => {
             </Navbar.Offcanvas>
             <div className="header-action d-flex">
               <a href="#contact" className="primary-btn"> Hire me! </a>
-            </div>
+            
             {/* mobile menu toggle btn */}
             <button className="toggle-btn d-block d-lg-none ms-2"
             onClick={() => setShow(!show)}>
               <i className={`bi ${show ? "bi-x" : "bi-list"}`}></i>
             </button>
-
+            </div>
           </Container>
         </Navbar>
         </Row>
