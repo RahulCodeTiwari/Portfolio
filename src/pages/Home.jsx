@@ -52,11 +52,11 @@ const Home = () => {
                 <h3 className="heading mb-3">
                   I am Web Developer
                 </h3>
-                <h1 className="main-heading">
+                <h1 className="main-heading mb-3">
                   Next-Level Web  <br />
                   Developer
                 </h1>
-                <p className="detail-text mt-4 mt-md-0 text-center text-md-start">
+                <p className="detail-text mt-4 mt-md-0 ">
                   I'm a professional web developer with 5 years of experience. 
                   I can develop any kind of website, web application, and mobile application.
                 </p>
