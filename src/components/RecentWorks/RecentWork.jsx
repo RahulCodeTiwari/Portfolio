@@ -30,10 +30,13 @@ const RecentWork = () => {
 
   //show all project if "All" is selected, otherwise show filetred projects
 
-  const filteredWorks = activeIndex === 0 ? recentWorks : recentWorks.filter((work) => work.catId === activeIndex)
+  const filteredWorks = activeIndex === 0
+   ? recentWorks
+   : recentWorks.filter((work) => work.catId === activeIndex)
 
   return (
     <>
+      
       <section className="recent-work section-spacing " id="works">
         <Container>
           <Row>
@@ -52,10 +55,10 @@ const RecentWork = () => {
                 
                 <Nav 
                  variant="pills"
-                 activeKey="1" 
+                // activeKey="1" 
                  onSelect={handleSelect}
                  className="position-relative"
-                 eventKey={activeIndex.toString()}
+                 activeKey={activeIndex.toString()}
                 >
                   {recentWorksCats.map((category, index) => {
                     return (
@@ -71,7 +74,7 @@ const RecentWork = () => {
                   })}
                   <motion.div
                   className="active-bg wow fadeInUp rounded-5"
-                  data-wow-delay='.6s'
+                  data-wow-delay=".6s"
                   initial={{visibility: "hidden", y:10}}
                   animate={{visibility: "visible", y:10}}
                   exit={{visibility: "hidden", y:10}}
@@ -96,7 +99,7 @@ const RecentWork = () => {
 
                       <Col md={6} sm={12} key={index}
                         as={motion.div}
-                        className="wow fadeship"
+                        className="wow fadeInUp"
                         data-wow-delay=".6s"
                         initial={{opacity: 0, y: 20}}
                         animate={{opacity: 1, y: 0}}

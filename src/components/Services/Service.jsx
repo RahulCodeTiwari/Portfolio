@@ -43,7 +43,7 @@ const Service = () => {
           </Col>
           <Col md={12} className="mt-4">
           {/* Service List */}
-            <div className="position-relative ref={parentRef}">
+            <div className="position-relative" ref={parentRef}>"
               <ListGroup as='ol' className="rounded-0 border-0">
 
                 {serviceData.map((service, index) => {
@@ -92,9 +92,9 @@ const Service = () => {
 
               <motion.div
                 className="active-bg wow fadeInup"
-                data-wow-delay='.6s'
+                data-wow-delay=".6s"
                 initial={{visibility:"hidden", y:10}}
-                animate={{visibility:"visible", y:10}}
+                animate={{visibility:"visible", y:0}}
                 exit={{visibility:"visible", y:10}}
                 style={{
                   position:"absolute",

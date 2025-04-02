@@ -42,7 +42,7 @@ const Header = () => {
             >
                 {/* header only visible on mobile */}
               <Offcanvas.Header className="d-flex justify-content-between d-lg-none">
-                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-lg m-0`}>
+                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-lg `}>
                   Web Creafters
                 </Offcanvas.Title>
                 <button className="btn btn-secondary" onClick={() => setShow(false)}>
@@ -55,13 +55,16 @@ const Header = () => {
                   <Nav.Link href="#works">Works</Nav.Link>
                   <Nav.Link href="#resume">Resume</Nav.Link>
                   <Nav.Link href="#skills">Skills</Nav.Link>
-                  <Nav.Link href="#testimonials">Testimonials</Nav.Link>
+                  <Nav.Link href="#testimonial">Testimonials</Nav.Link>
                   <Nav.Link href="#contact">Contact</Nav.Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
             <div className="header-action d-flex">
-              <a href="#contact" className="primary-btn"> Hire me! </a>
+              <a href="#contact" className="primary-btn">
+                {" "}    
+                 Hire me!
+             </a>
             
             {/* mobile menu toggle btn */}
             <button className="toggle-btn d-block d-lg-none ms-2"

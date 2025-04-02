@@ -60,7 +60,7 @@ const Home = () => {
                   I'm a professional web developer with 5 years of experience. 
                   I can develop any kind of website, web application, and mobile application.
                 </p>
-                <div className="d-flex mt-3 align-items-center flex-ms-row flex-column">
+                <div className="d-flex mt-3 align-items-center flex-sm-row flex-column">
                   <button className="secondary-btn" type="button">
                     Resume <i className="bi bi-download ms-2"></i>
 

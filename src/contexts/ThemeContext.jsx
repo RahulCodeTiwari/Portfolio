@@ -17,7 +17,7 @@ export const ThemeContextProvider = ({ children }) => {
       const userPrefersDark = window.matchMedia(
         "(prefers-color-scheme: dark)"
       ).matches;
-      return userPrefersDark ? "dark" : "light";
+      return userPrefersDark ? "light" : "dark";
     }
   };
 

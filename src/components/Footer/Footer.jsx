@@ -7,22 +7,22 @@ const Footer = () => {
       <footer className="py-4 footer">
         <ul className="nav justify-content-center border-bottom bb-3 my-3">
           <li className="nav-item">
-            <a href="#" className="nav-link px-2 border-text"> Services </a>
+            <a href="#services" className="nav-link px-2 border-text"> Services </a>
           </li>
           <li className="nav-item">
-            <a href="#" className="nav-link px-2 border-text"> Work </a>
+            <a href="#works" className="nav-link px-2 border-text"> Work </a>
           </li>
           <li className="nav-item">
-            <a href="#" className="nav-link px-2 border-text"> Resume </a>
+            <a href="#resume" className="nav-link px-2 border-text"> Resume </a>
           </li>
           <li className="nav-item">
-            <a href="#" className="nav-link px-2 border-text"> Skills </a>
+            <a href="#skills" className="nav-link px-2 border-text"> Skills </a>
           </li>
           <li className="nav-item">
-            <a href="#" className="nav-link px-2 border-text"> Testimonials </a>
+            <a href="#testimonial" className="nav-link px-2 border-text"> Testimonials </a>
           </li>
           <li className="nav-item">
-            <a href="#" className="nav-link px-2 border-text"> Contact </a>
+            <a href="#contact" className="nav-link px-2 border-text"> Contact </a>
           </li>
         </ul>
         <p className="text-center body-text mb-0"> @2025 Web Crafters </p>

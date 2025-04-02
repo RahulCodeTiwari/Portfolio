@@ -35,8 +35,9 @@
     position: absolute;
     z-index: 1;
     background: var(--primary-color);
-    background: linear-gradient(260deg,
-            var(--secondary-color) 0,
+    background: linear-gradient(
+        260deg,
+            var(--secondary-color) 0%,
             var(--primary-color) 100%
          );
          transition: all 0.5s ease;

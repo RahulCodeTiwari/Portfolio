@@ -13,7 +13,7 @@ import { testimonialsData } from "../../utils/data";
 const Testimonial = () => {
   return (
     <>
-      <section className="testimonials section=spacing light-bg" id="Testimonial">
+      <section className="testimonial section-spacing light-bg" id="testimonial">
         <Container>
           <Row className="g-md-5 g-4">
             <Col md={6}>
@@ -29,7 +29,7 @@ const Testimonial = () => {
                modules={[ Pagination, Autoplay ]}
                spacebetween={10}
                slidesPerView={1}
-               Autoplay={{delay:5000}}
+               autoplay={{delay:5000}}
                pagination={{ clickable: true}}
                breakpoints={{
                 640: {
