@@ -30,7 +30,7 @@ const Header = () => {
           <Container fluid>
 
             {/* logo */}
-            <Navbar.Brand href="#">Web Crafters</Navbar.Brand>
+            <Navbar.Brand href="#">MERN MASTER</Navbar.Brand>
 
             {/* for mobile menu */}
   
@@ -55,7 +55,7 @@ const Header = () => {
                   <Nav.Link href="#works">Works</Nav.Link>
                   <Nav.Link href="#resume">Resume</Nav.Link>
                   <Nav.Link href="#skills">Skills</Nav.Link>
-                  <Nav.Link href="#testimonial">Testimonials</Nav.Link>
+                  <Nav.Link href="#certification">Certificates</Nav.Link>
                   <Nav.Link href="#contact">Contact</Nav.Link>
                 </Nav>
               </Offcanvas.Body>

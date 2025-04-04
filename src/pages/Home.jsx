@@ -6,8 +6,8 @@ import Service from "../components/Services/Service";
 import RecentWork from "../components/RecentWorks/RecentWork";
 import Career from "../components/Career/Career";
 import Skill from "../components/Skills/Skill";
-import Testimonial from "../components/Testimonials/Testimonial";
 import Contact from "../components/Contact/Contact";
+import Certification from "../components/Certificates/Certificate";
 
 
 
@@ -53,21 +53,22 @@ const Home = () => {
                   I am Web Developer
                 </h3>
                 <h1 className="main-heading mb-3">
-                  Next-Level Web  <br />
+                  Full-Stack Web  <br />
                   Developer
                 </h1>
                 <p className="detail-text mt-4 mt-md-0 ">
-                  I'm a professional web developer with 5 years of experience. 
-                  I can develop any kind of website, web application, and mobile application.
+                Passionate about building scalable web applications with clean, efficient code. Experienced in developing and deploying full-stack projects
+                . Always eager to learn new technologies and solve real-world challenges.
                 </p>
                 <div className="d-flex mt-3 align-items-center flex-sm-row flex-column">
                   <button className="secondary-btn" type="button">
-                    Resume <i className="bi bi-download ms-2"></i>
-
+                     
+                    <a href="../src/My_Resume.pdf" download="" target="_blank" class="button about__button">Resume</a>
+                    <i className="bi bi-download ms-2"></i>
                   </button>
                   <ul className="d-flex gap-3 m-0 mt-3 mt-sm-0 p-0 ms-sm-3 social-media pb-3 pb-md-0">
                     <li className="d-block">
-                      <a href="#">
+                      <a href="https://x.com/RAHULTIWAR5279">
                         <i className="bi bi-twitter"></i>
                       </a>
                     </li>
@@ -77,12 +78,12 @@ const Home = () => {
                       </a>
                     </li>
                     <li className="d-block">
-                      <a href="#">
-                        <i className="bi bi-linkdin"></i>
+                      <a href="https://www.linkedin.com/in/rahul-tiwari-6a55b9229/">
+                      <i className="bi bi-linkedin"></i>
                       </a>
                     </li>
                     <li className="d-block">
-                      <a href="#">
+                      <a href="https://github.com/RahulCodeTiwari">
                         <i className="bi bi-github"></i>
                       </a>
                     </li>
@@ -105,11 +106,11 @@ const Home = () => {
             <Col lg={3} md={6} sm={6} xs={6} className="pb-4 pb-lg-0">
               <div className="activement-item d-flex align-align-items-center flex-column flex-sm-row">
                 <div className="number me-sm-3 me-0 mb-3 mb-sm-0">
-                  <h5>14</h5>
+                  <h5>3</h5>
                 </div>
                 <div className="text">
                   <p className="detail-text primary-clr">
-                    Years of <br/> Experience
+                    Months of Internship <br/> Experience
                   </p>
                 </div>
               </div>
@@ -117,7 +118,7 @@ const Home = () => {
             <Col lg={3} md={6} sm={6} xs={6} className="pb-4 pb-lg-0">
               <div className="activement-item d-flex align-align-items-center flex -column flex-flex-sm-row">
                 <div className="number me-sm-3 me-0 mb-3 mb-sm-0">
-                  <h5>10+</h5>
+                  <h5>5+</h5>
                 </div>
                 <div className="text">
                   <p className="detail-text primary-clr">
@@ -129,11 +130,11 @@ const Home = () => {
             <Col lg={3} md={6} sm={6} xs={6} className="pb-4 pb-lg-0">
               <div className="activement-item d-flex align-align-items-center flex -column flex-flex-sm-row">
                 <div className="number me-sm-3 me-0 mb-3 mb-sm-0">
-                  <h5>10+</h5>
+                  <h5>3 </h5>
                 </div>
                 <div className="text">
                   <p className="detail-text primary-clr">
-                    projects <br/> completed
+                    Months learning from <br/> SamSung Innovation Campus Program
                   </p>
                 </div>
               </div>
@@ -145,7 +146,7 @@ const Home = () => {
                 </div>
                 <div className="text">
                   <p className="detail-text primary-clr">
-                    projects <br/> completed
+                    participations in <br/> Tech Events
                   </p>
                 </div>
               </div>
@@ -160,7 +161,7 @@ const Home = () => {
       <RecentWork />
       <Career />
       <Skill />
-      <Testimonial />
+      <Certification />
       <Contact />
     </>
   )

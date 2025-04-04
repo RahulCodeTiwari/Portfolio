@@ -63,6 +63,7 @@ const RecentWork = () => {
                   {recentWorksCats.map((category, index) => {
                     return (
                       <Nav.Item key={index}>
+                        
                       <Nav.Link eventKey={index.toString()}
                       className="detail-text px-md-4 px-3"
                       ref={(el) => (navItemsRef.current[index] = el)}
@@ -73,7 +74,7 @@ const RecentWork = () => {
                     );
                   })}
                   <motion.div
-                  className="active-bg wow fadeInUp rounded-5"
+                  className="active-bg wow fadeInUp rounded-5 "
                   data-wow-delay=".6s"
                   initial={{visibility: "hidden", y:10}}
                   animate={{visibility: "visible", y:10}}
@@ -109,7 +110,7 @@ const RecentWork = () => {
                       >
                       <div className="service-item position-relative p-3 p-md-5 rounded">
                         {/* Project Image */}
-                        <img src="project.image" className="img-fluid" alt={project.title} />
+                        <img src={project.image} className="img-fluid" alt={project.title} />
   
                         {/* Project Title and description */}
                         <div className="service-des">

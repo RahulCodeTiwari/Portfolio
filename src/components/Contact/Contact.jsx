@@ -42,7 +42,7 @@ const Contact = () => {
                 >
                   <Form.Select aria-label="">
                     <option disabled>Choose Service</option>
-                    <option value="1">Branding Design</option>
+                    <option value="1">Web Development</option>
                     <option value="2">Web Design</option>
                     <option value="3">UI / UX Design</option>
                     <option value="4">App Design</option>
@@ -81,7 +81,8 @@ const Contact = () => {
 
                   <li className="d-flex align-item-center justify-content-start mb-4 mt-md-5">
                     <span className="d-flex align-items-center justify-content-center rounded-cirle me-3 fs-4 icon-box">
-                      <i className="bi bi-telephone"></i>
+                    <i className="bi bi-envelope"></i>
+
                     </span>
                     <span className="">
                       <span className="body-text mb-2 d-block">Email</span>
@@ -95,7 +96,7 @@ const Contact = () => {
                     </span>
                     <span className="">
                       <span className="body-text mb-2 d-block">Address</span>
-                      <span className="detail-text mb-2"> Aishbagh, Lucknow</span>
+                      <span className="detail-text mb-2"> Lucknow, Uttar Pradesh, India</span>
                     </span>
                   </li>
 

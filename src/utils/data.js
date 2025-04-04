@@ -5,16 +5,14 @@ import SkillImg4 from "../assets/images/reactjs.png";
 import SkillImg5 from "../assets/images/angular.png";
 import SkillImg6 from "../assets/images/nodejs.png";
 
-import user1 from "../assets/images/user.jpg";
-import user2 from "../assets/images/user1.jpg";
+import logo1 from "../assets/images/logo1.avif";
+import logo2 from "../assets/images/logo2.png";
 
-import logo from "../assets/images/dummy-logo-1.png";
-import logo1 from "../assets/images/dummy-logo-2.png";
 
-import project1 from "../assets/images/project1.jpg";
-import project2 from "../assets/images/project2.jpg";
-import project3 from "../assets/images/project3.jpg";
-import project4 from "../assets/images/project4.jpg";
+import project1 from "../assets/images/project1.png";
+import project2 from "../assets/images/project2.png";
+import project3 from "../assets/images/project3.png";
+import project4 from "../assets/images/project4.png";
 
 export const serviceData = [
   {
@@ -34,88 +32,83 @@ export const serviceData = [
     title: "Content Writing",
     description:
       "Build and integrate APIs to connect websites with third-party applications, enhancing functionality and performance.",
-  },
-  {
-    id: 4,
-    title: "Digital Marketing",
-    description:
-      "Refresh outdated websites with modern, appealing designs that align with current brand goals and user expectations.",
-  },
+  }
 ];
 
-export const recentWorksCats = ["All", "UX/UI", "Branding", "Apps"];
+export const recentWorksCats = ["All", "Full Stack", "Frontend", "Javascript"];
 
 export const recentWorks = [
   {
     id: 0,
     catId: 1, 
-    title: "Zomato Redesign",
+    title: "Chat Application",
     description: "Revamping user experience for better engagement",
     image: project1,
   },
   {
     id: 1,
     catId: 2,
-    title: "Tata Motors Rebrand",
-    description: "Modernizing the brand identity for global appeal",
+    title: "Employee Management System",
+    description: "Modernizing the management system for efficiency",
     image: project2,
   },
   {
     id: 2,
     catId: 2, 
-    title: "Byju's Visual Identity",
-    description: "Enhancing the brand through strategic design",
+    title: "News Application with React.js",
+    description: "A real time news web application",
     image: project3,
   },
   {
-    id: 3,
-    catId: 3,
-    title: "Paytm Super App",
-    description: "Developing an all-in-one fintech solution",
-    image: project4,
-  },
+  id: 3,
+  catId: 3, 
+  title: "Tic Tac Toe Game",
+  description: "A simple tic tac toe game",
+  image: project4,
+},
+
 ];
 
 
 export const experienceData = [
   {
     id: 0,
-    year: "2022 - Present",
-    name: "Full-Stack Development",
-    address: "Infosys, Bangalore",
+    year: "August 2024 - September 2024",
+    name: "SDE Intern",
+    address: "BLUESTOCK.in",
   },
   {
     id: 1,
-    year: "2021 - 2022",
-    name: "Frontend Development Internship",
-    address: "Wipro, Hyderabad",
+    year: "July 2024 - August 2024",
+    name: "Web Development Internship",
+    address: "Indian Railways, Lucknow",
   },
   {
     id: 2,
-    year: "2020 - 2021",
-    name: "UI/UX Design",
-    address: "Tata Consultancy Services (TCS), Pune",
+    year: "May 2024 - June 2024",
+    name: "Web Development Internship",
+    address: "Oasis Infobyte",
   },
 ];
 
 export const educationData = [
   {
     id: 0,
-    year: "2020 - 2023",
-    name: "Computer Science and Engineering",
-    address: "Indian Institute of Technology (IIT), Bombay",
+    year: "2021 - 2025",
+    name: "B.Tech in Computer Science and Engineering",
+    address: "FOET , University of Lucknow, Lucknow",
   },
   {
     id: 1,
-    year: "2016 - 2020",
-    name: "Information Technology",
-    address: "National Institute of Technology (NIT), Trichy",
+    year: "2020 - 2021",
+    name: "Class XII",
+    address: "Govt Jubilee Inter College, Lucknow",
   },
   {
     id: 2,
-    year: "2012 - 2015",
-    name: "Bachelor of Science ",
-    address: "University of Delhi, Delhi",
+    year: "2018 - 2019",
+    name: "Class X ",
+    address: "Govt L.B.S Inter College, Kheri",
   },
 ];
 
@@ -159,33 +152,33 @@ export const skillsData = [
   },
 ];
 
-export const testimonialsData = [
+export const certificationsData = [
   {
-    name: "Amit Sharma",
-    position: "CEO, TechWave ",
-    user: user1,
-    logo: logo,
-    msg: "The team delivered a high-performance website with a modern design. It boosted our online presence significantly!",
-  },
-  {
-    name: "Priya Iyer",
-    position: "Founder, Digital Bloom",
-    user: user2,
+    id: 0,
     logo: logo1,
-    msg: "Their SEO strategy helped us rank on the first page of search results. Organic traffic and inquiries have doubled!",
+    msg: "This is a 3 months learning program that has helped me a lot in learning the basics of web development and 3 days hackathon event. I am very thankful to the SamSung Innovation Campus for this opportunity.",
+    name: "SamSung Innovation Campus",
+    position: "Web Development",
   },
   {
-    name: "Rohit Verma",
-    position: "CTO, StartUp Junction",
-    user: user1,
-    logo: logo,
-    msg: "The mobile app they built is fast, user-friendly, and scalable. It exceeded all our expectations in terms of quality!",
+    id: 1,
+    logo: logo2,
+    msg: "I have completed a web development course from Udemy. This course has helped me a lot in learning the basics of web development.",
+    name: "Web Development Course",
+    position: "Udemy",
   },
   {
-    name: "Sneha Patel",
-    position: "COO, GrowthSync ",
-    user: user2,
-    logo: logo1,
-    msg: "Our new website is sleek and responsive. We’ve received positive feedback from users and seen better engagement.",
+    id: 1,
+    logo: logo2,
+    msg: "I have completed a web development course from Udemy. This course has helped me a lot in learning the basics of web development.",
+    name: "Web Development Course",
+    position: "Udemy",
+  },
+  {
+    id: 1,
+    logo: logo2,
+    msg: "I have completed a web development course from Udemy. This course has helped me a lot in learning the basics of web development.",
+    name: "Web Development Course",
+    position: "Udemy",
   },
 ];
