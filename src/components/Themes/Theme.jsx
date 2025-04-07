@@ -1,9 +1,17 @@
-import React from 'react'
+// src/theme.jsx
+import React from "react";
+import { useTheme } from "../../contexts/ThemeContext";
+import "./theme.css";
 
-const Theme = () => {
+
+const ThemeToggle = () => {
+  const { theme, toggleTheme } = useTheme();
+
   return (
-    <div>Theme</div>
-  )
-}
+    <button className="primary-btn mt-2 " onClick={toggleTheme}>
+      Switch to {theme === "light" ? "Dark" : "Light"} Mode
+    </button>
+  );
+};
 
-export default Theme
+export default ThemeToggle;

@@ -71,7 +71,7 @@
   }
 
   /* Adjust container padding for better spacing */
-  .container {
+  .Container {
     max-width: 1430px;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -376,30 +376,4 @@ h6 {
 
 
 
-.themeChangeBtn {
-  border-radius: 25px;
-  background-image: linear-gradient(
-    90deg,
-    var(--primary-color) 0,
-    var(--secondary-color) 51%,
-    var(--primary-color)
-  );
-  border: none;
-  border-top-left-radius: 9999px;
-  border-bottom-left-radius: 9999px;
-  color: white;
-  padding: 5px 0px;
-  transition-duration: .4s;
-  transform: translateX(40px);
-}
 
-.themeChangeBtn span {
-  visibility: hidden;
-}
-.themeChangeBtn:hover{
-  transform: translateX(0px);
-}
-
-.themeChangeBtn:hover span {
-  visibility: visible;
-}

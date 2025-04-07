@@ -105,17 +105,22 @@ const RecentWork = () => {
                         initial={{opacity: 0, y: 20}}
                         animate={{opacity: 1, y: 0}}
                         exit={{opacity: 0, y: 20}}
-                        transition={{duration: 0.5}}                      
+                        transition={{duration: 0.5}}
+                        
+                        
                       
                       >
+                       
                       <div className="service-item position-relative p-3 p-md-5 rounded">
                         {/* Project Image */}
                         <img src={project.image} className="img-fluid" alt={project.title} />
+                       
   
                         {/* Project Title and description */}
                         <div className="service-des">
                           <h1 className="heading text-white fw-bold primary-clr">
-                            {project.title}
+                           
+                          {project.title}
                           </h1>
                           <p className="body-detail text-white"> </p>
                           {project.description}
@@ -128,22 +133,12 @@ const RecentWork = () => {
                  </AnimatePresence>
 
                 </Row>
-                <Nav.Item>
-                  <Nav.Link eventKey="2" title="Item">
-                    NavLink 2 content
-                  </Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="3" disabled>
-                    NavLink 3 content
-                  </Nav.Link>
-                </Nav.Item>
-                <NavDropdown title="Dropdown" id="nav-dropdown">
-                  <NavDropdown.Item eventKey="4.1">Action</NavDropdown.Item>
-                  <NavDropdown.Item eventKey="4.2">Another action</NavDropdown.Item>
-                  <NavDropdown.Item eventKey="4.3">Something else here</NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item eventKey="4.4">Separated link</NavDropdown.Item>
+            
+                <NavDropdown className=" fw-bold"  title="Link Of Projects" id="nav-dropdown">
+                  <NavDropdown.Item eventKey="4.1"><a href="https://chatting-app-clea.onrender.com/login">Chat app</a></NavDropdown.Item>
+                  <NavDropdown.Item eventKey="4.2"><a href="https://rahulcodetiwari.github.io/EMS-frontend-App/">Ems app</a></NavDropdown.Item>
+                  <NavDropdown.Item eventKey="4.3"><a href="https://rahulcodetiwari.github.io/Tic-Tac-Toe-game/">Tic-Tac-Toe game</a></NavDropdown.Item>
+            
                 </NavDropdown>
               
               

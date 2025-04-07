@@ -8,7 +8,7 @@ import WOW from 'wowjs'
 import "animate.css"; 
 
 import Theme from "./components/Themes/Theme";
-import { ThemeContextProvider } from "./contexts/ThemeContext";
+import { ThemeProvider } from "./contexts/ThemeContext";
 
 
 function App() {
@@ -23,12 +23,12 @@ wow.init();
 
   return (
     <>
-     <ThemeContextProvider>
+     <ThemeProvider>
       <Header />
       <Home />
       <Footer />
       <Theme />
-      </ThemeContextProvider>
+      </ThemeProvider>
     </>
   );
 }

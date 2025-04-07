@@ -7,12 +7,14 @@ import SkillImg6 from "../assets/images/nodejs.png";
 
 import logo1 from "../assets/images/logo1.avif";
 import logo2 from "../assets/images/logo2.png";
+import logo3 from "../assets/images/logo3.png";
 
 
 import project1 from "../assets/images/project1.png";
 import project2 from "../assets/images/project2.png";
 import project3 from "../assets/images/project3.png";
 import project4 from "../assets/images/project4.png";
+import { a } from "framer-motion/client";
 
 export const serviceData = [
   {
@@ -74,7 +76,7 @@ export const experienceData = [
   {
     id: 0,
     year: "August 2024 - September 2024",
-    name: "SDE Intern",
+    name: "Software Development Engineering Intern",
     address: "BLUESTOCK.in",
   },
   {
@@ -156,7 +158,7 @@ export const certificationsData = [
   {
     id: 0,
     logo: logo1,
-    msg: "This is a 3 months learning program that has helped me a lot in learning the basics of web development and 3 days hackathon event. I am very thankful to the SamSung Innovation Campus for this opportunity.",
+    msg: "This is a 3 months learning program that has helped me a lot in learning the basics of web development and 3 days hackathon event.",
     name: "SamSung Innovation Campus",
     position: "Web Development",
   },
@@ -164,21 +166,14 @@ export const certificationsData = [
     id: 1,
     logo: logo2,
     msg: "I have completed a web development course from Udemy. This course has helped me a lot in learning the basics of web development.",
-    name: "Web Development Course",
-    position: "Udemy",
+    name: "Udemy",
+    position: "Web Development Course",
   },
   {
     id: 1,
-    logo: logo2,
-    msg: "I have completed a web development course from Udemy. This course has helped me a lot in learning the basics of web development.",
-    name: "Web Development Course",
-    position: "Udemy",
-  },
-  {
-    id: 1,
-    logo: logo2,
-    msg: "I have completed a web development course from Udemy. This course has helped me a lot in learning the basics of web development.",
-    name: "Web Development Course",
-    position: "Udemy",
+    logo: logo3,
+    msg: "I have completed a digital training program from HCL Foundation. This program has helped me a lot in learning the basics of web development.",
+    name: "Digital Training Program",
+    position: "HCL Foundation",
   },
 ];

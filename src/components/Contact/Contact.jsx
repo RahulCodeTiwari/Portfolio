@@ -3,69 +3,66 @@ import "../Contact/Contact.css";
 import { Col, Container, FloatingLabel, Row, Form } from "react-bootstrap";
 
 const Contact = () => {
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+  
+    formData.append("access_key", "fcc57a28-bfad-46ad-a474-3f091e1df1c4");
+  
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+  
+    console.log("Sending payload:", json); // for debugging
+  
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: json
+    });
+  
+    const res = await response.json();
+    console.log("Server response:", res);
+  
+    if (res.success) {
+      console.log("Success:", res);
+    } else {
+      console.error("Submission error:", res);
+    }
+  };
+  
+ 
+
   return (
     <>
       <section className="contact-section section-spacing" id="contact">
-        <Container>
-          <Row className="align-items-center">
-            <Col md={6}>
-              <div className="contact-form">
-                <div className="text-center">
-                  <h1 className="heading primary-btn mb-3">Let's work Together!</h1>
-                  <p className="body-text">
-                    I design and code beautifully simple things and i love what
-                    i do. Just simple like that!
-                  </p>
-                </div>
-              
+        <Container >
+          <Row className=" mb-5">
+            <Col md={6} className="offset-md-1 offset-0 mt-4 mt-md-0">
+            <div className="d-flex flex-column px-0">
+              <form className="contact-form">
+                  <h2>Contact Form</h2>
+                  <div className="input-box">
+                    <label>Full Name</label>
+                    <input type="text" className="field" placeholder='Enter your name' required />
+                  </div>
+                  <div className="input-box">
+                    <label>Full Name</label>
+                    <input type="email" className="field" placeholder='Enter your email' required />
+                  </div>
+                  <div className="input-box">
+                    <label>Full Name</label>
+                    <textarea name="" id="" className="field mess" placeholder='Enter your message' required></textarea>
+                  </div>
+                  <button type="submit">Send Message</button>
+              </form>
+              </div>
+            </Col>
            
-          <Row className="mb-4">
-            <Col md={6} className="mb-4">
-              <FloatingLabel controlId="Fname" label="First Name">
-                <Form.Control type="text" placeholder="First Name" />
-              </FloatingLabel>
-            </Col>
-            <Col md={6} className="mb-4">
-              <FloatingLabel controlId="Lname" label="Last Name">
-                <Form.Control type="text" placeholder="Last Name" />
-              </FloatingLabel>
-            </Col>
-            <Col md={12} className="mb-4">
-              <FloatingLabel controlId="email" label="Email address">
-                <Form.Control type="email" placeholder="name@example.com" />
-              </FloatingLabel>
-            </Col>
-            <Col md={12} className="mb-4">
-              <FloatingLabel
-                controlId="floatingSelect"
-                label="select an option"
-                >
-                  <Form.Select aria-label="">
-                    <option disabled>Choose Service</option>
-                    <option value="1">Web Development</option>
-                    <option value="2">Web Design</option>
-                    <option value="3">UI / UX Design</option>
-                    <option value="4">App Design</option>
-                  </Form.Select>
-                  </FloatingLabel>
-            </Col>
-            <Col md={12} className="mb-4">
-              <FloatingLabel controlId="floatingTextarea2" label="Comments">
-                <Form.Control
-                  as="textarea"
-                  placeholder="Leave a comment here"
-                  style={({height: "125px"})}
-                />
-              </FloatingLabel>
-            
-            </Col>
-
-            <div className="text-start">
-              <button className="primary-btn"> Send Message </button>
-            </div>
-          </Row>
-          </div>
-            </Col>
+         
+          
             <Col md={5} className="offset-md-1 offset-0 mt-4 mt-md-0">
               <div className="d-flex flex-column px-0">
                 <ul className="m-0 p-0 contact-information">
@@ -111,3 +108,4 @@ const Contact = () => {
 }
 
 export default Contact
+
