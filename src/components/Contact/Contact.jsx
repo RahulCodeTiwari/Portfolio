@@ -1,69 +1,86 @@
-import React from "react";
-import "../Contact/Contact.css";
-import { Col, Container, FloatingLabel, Row, Form } from "react-bootstrap";
+
+import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
+import "./Contact.css";
+import { Col, Row} from "react-bootstrap";
+
 
 const Contact = () => {
-  const onSubmit = async (event) => {
-    event.preventDefault();
-    const formData = new FormData(event.target);
-  
-    formData.append("access_key", "fcc57a28-bfad-46ad-a474-3f091e1df1c4");
-  
-    const object = Object.fromEntries(formData);
-    const json = JSON.stringify(object);
-  
-    console.log("Sending payload:", json); // for debugging
-  
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json"
-      },
-      body: json
-    });
-  
-    const res = await response.json();
-    console.log("Server response:", res);
-  
-    if (res.success) {
-      console.log("Success:", res);
-    } else {
-      console.error("Submission error:", res);
-    }
-  };
-  
- 
 
-  return (
-    <>
-      <section className="contact-section section-spacing" id="contact">
-        <Container >
-          <Row className=" mb-5">
-            <Col md={6} className="offset-md-1 offset-0 mt-4 mt-md-0">
-            <div className="d-flex flex-column px-0">
-              <form className="contact-form">
-                  <h2>Contact Form</h2>
-                  <div className="input-box">
-                    <label>Full Name</label>
-                    <input type="text" className="field" placeholder='Enter your name' required />
-                  </div>
-                  <div className="input-box">
-                    <label>Full Name</label>
-                    <input type="email" className="field" placeholder='Enter your email' required />
-                  </div>
-                  <div className="input-box">
-                    <label>Full Name</label>
-                    <textarea name="" id="" className="field mess" placeholder='Enter your message' required></textarea>
-                  </div>
-                  <button type="submit">Send Message</button>
-              </form>
-              </div>
-            </Col>
-           
-         
-          
-            <Col md={5} className="offset-md-1 offset-0 mt-4 mt-md-0">
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState(""); 
+  const [message, setMessage] = useState("");
+
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    //your emailjs service Id, template Id, and Public key
+    const serviceId = "service_uu9w7vs";
+    const templateId = "template_j0sq7u3";
+    const publicKey = "kERVI8EparhKDGlA8";
+  
+
+  // create a new object that contains dynamic template params
+  const templateParams = {
+    from_name: name,
+    from_email: email,
+    to_name: "Rahul",
+    message: message,
+  };
+
+  //send the email using Emailjs
+  emailjs.send(serviceId, templateId, templateParams, publicKey)
+  .then((response) => {
+    console.log("Email sent Successfully!", response);
+    setName("");
+    setEmail("");
+    setMessage("");
+  })
+  .catch((error) => {
+    console.error("Error sending email:", error);
+  });
+}
+
+return (
+  <section className="contact-section section-spacing" id="contact">
+     <Row className="g-md-5 g-4">
+     <Col md={6}>
+    <form onSubmit={handleSubmit} className="contact-form">
+      <h2 className="primary-clr">Contact </h2>
+      <input 
+      className="input-box"
+      type="text"
+      placeholder="Your Name"
+      value={name} 
+      onChange={(e) => setName(e.target.value)}
+      required
+      />
+      <input
+      className="input-box"
+      type="email"
+        placeholder="Your email"
+      value={email}
+      onChange={(e) => setEmail(e.target.value)}
+      required
+      />
+      <textarea
+      className="textarea "
+      cols="30"
+      row="10"
+      value={message}
+      onChange={(e) => setMessage(e.target.value)}
+      placeholder="Your message"
+      required
+      >
+
+      </textarea>
+      <button type="submit">Send Email</button>
+    </form>
+    </Col>
+
+
+    <Col md={5} className="offset-md-1 offset-0 mt-4 mt-md-0">
               <div className="d-flex flex-column px-0">
                 <ul className="m-0 p-0 contact-information">
                 <li className="d-flex align-item-center justify-content-start mb-4 mt-md-5">
@@ -100,12 +117,10 @@ const Contact = () => {
                 </ul>
               </div>
             </Col>
-          </Row>
-        </Container>
-      </section>
-    </>
+
+    </Row>
+    </section>
   )
 }
 
 export default Contact
-
