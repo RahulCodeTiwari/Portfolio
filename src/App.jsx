@@ -4,7 +4,7 @@ import Header from "./components/Header/Header";
 import Home from "./pages/Home";
 
 import "./App.css";
-import 'wowjs/dist/wow.js';
+import WOW from "wowjs";
 import "animate.css"; 
 
 import Theme from "./components/Themes/Theme";
