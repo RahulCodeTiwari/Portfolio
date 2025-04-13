@@ -63,7 +63,7 @@ const Home = () => {
                 <div className="d-flex mt-3 align-items-center flex-sm-row flex-column">
                   <button className="secondary-btn" type="button">
                      
-                    <a href="../src/My_Resume.pdf" download="" target="_blank" class="button about__button">Resume</a>
+                    <a href="../src/My_Resume.pdf" download="" target="_blank" className="button about__button">Resume</a>
                     <i className="bi bi-download ms-2"></i>
                   </button>
                   <ul className="d-flex gap-3 m-0 mt-3 mt-sm-0 p-0 ms-sm-3 social-media pb-3 pb-md-0">

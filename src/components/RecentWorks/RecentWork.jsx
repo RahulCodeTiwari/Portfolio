@@ -73,22 +73,23 @@ const RecentWork = () => {
                     </Nav.Item>
                     );
                   })}
-                  <motion.div
-                  className="active-bg wow fadeInUp rounded-5 "
-                  data-wow-delay=".6s"
-                  initial={{visibility: "hidden", y:10}}
-                  animate={{visibility: "visible", y:10}}
-                  exit={{visibility: "hidden", y:10}}
-                  transition={{ duration: 0.3}}
-                  style={{
-                    position:"absolute",
-                    height: navItemDimensions[activeIndex]?.height || 40,
-                    width: navItemDimensions[activeIndex]?.width || 50,
-                    left: navItemDimensions[activeIndex]?.left || 0,
-                    top: navItemDimensions[hoverIndex]?.top || 0,
-                    zIndex: 1,
-                  }}
-                  ></motion.div>
+                 
+                 <motion.div
+                    className="active-bg rounded-5"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 20 }}
+                    transition={{ duration: 0.3 }}
+                    style={{
+                      position: "absolute",
+                      height: navItemDimensions[activeIndex]?.height || 40,
+                      width: navItemDimensions[activeIndex]?.width || 50,
+                      left: navItemDimensions[activeIndex]?.left || 0,
+                      top: navItemDimensions[hoverIndex]?.top || 0,
+                      zIndex: 1,
+                    }}
+                  />
+
                 </Nav>
                 </div>
                 </div>
@@ -99,9 +100,7 @@ const RecentWork = () => {
                     return (
 
                       <Col md={6} sm={12} key={index}
-                        as={motion.div}
-                        className="wow fadeInUp"
-                        data-wow-delay=".6s"
+                      
                         initial={{opacity: 0, y: 20}}
                         animate={{opacity: 1, y: 0}}
                         exit={{opacity: 0, y: 20}}
