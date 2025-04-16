@@ -1,6 +1,6 @@
 import React from "react";
 import {Container, Row, Col, Card} from "react-bootstrap";
-import "../Skills/skill.css";
+import "../Skills/Skill.css";
 import { skillsData } from "../../utils/data";
 
 const Skill = () => {
