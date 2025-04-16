@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Container, Row, Col, Nav, NavDropdown } from "react-bootstrap";
 import { AnimatePresence, motion } from "framer-motion";
-import "../RecentWorks/recentwork.css";
+import "../RecentWorks/RecentWork.css";
 import { recentWorks, recentWorksCats } from "../../utils/data";
 
 const RecentWork = () => {
