@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import "../Services/service.css";
+import "../Services/Service.css";
 import { Container, Row, Col, ListGroup} from "react-bootstrap";
 import { serviceData } from "../../utils/data";
 import { motion } from "framer-motion";
