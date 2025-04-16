@@ -1,5 +1,5 @@
 import React from "react";
-import "../Certificates/Certificate.css";
+import "../Certificates/certificate.css";
 import { Col, Container, Row, Card} from "react-bootstrap";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
