@@ -44,6 +44,7 @@ const Contact = () => {
 
 return (
   <section className="contact-section section-spacing" id="contact">
+    <Container>
      <Row className="g-md-5 g-4">
      <Col md={6}>
     <form onSubmit={handleSubmit} className="contact-form">
@@ -119,6 +120,7 @@ return (
             </Col>
 
     </Row>
+      </Container>
     </section>
   )
 }
