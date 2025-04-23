@@ -37,7 +37,7 @@ export const serviceData = [
   }
 ];
 
-export const recentWorksCats = ["All", "Full Stack", "Frontend", "Javascript"];
+export const recentWorksCats = ["All", "Full Stack", "Frontend"];
 
 export const recentWorks = [
   {
