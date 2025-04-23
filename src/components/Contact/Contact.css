@@ -42,6 +42,7 @@ form .input-box {
 }
 form .textarea {
     height: 200px;
+    width: 100%;
     margin-top: 20px;
     resize: none;
 }
